@@ -26,6 +26,10 @@ h3 {
   font-weight: bold;
   margin: 0;
   color: #aa0000;
+
+  & + p {
+    margin-top: 0;
+  }
 }
 
 a {
@@ -99,7 +103,6 @@ figure {
 
   li {
     padding: 0;
-    display: inline;
     list-style-type: none;
     float: left;
 
