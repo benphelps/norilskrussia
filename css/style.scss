@@ -85,7 +85,19 @@ figure {
 
   .name {
     float: right;
-    margin-right: 25px;
+    margin: 0px 0px 0px 10px;
+    font-size: 7em;
+    color: #293094;
+
+    a {
+      text-decoration: none;
+      color: #293094;
+
+      &:visited {
+        text-decoration: none;
+        color: #293094;
+      }
+    }
   }
 }
 
@@ -147,5 +159,27 @@ figure {
     height: 0;
     clear: both;
     visibility: hidden;
+  }
+}
+
+.video {
+  margin: 0 auto;
+  width: 640px;
+}
+
+.lyrics {
+  .chorus {
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  .russian {
+    float: left;
+    text-align: left;
+  }
+
+  .english {
+    float: right;
+    text-align: right;
   }
 }

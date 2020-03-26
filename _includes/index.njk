@@ -39,9 +39,7 @@ title: "Norilsk Russia: Promoting Tourism To The World's Most Northerly City"
                 </a>
             </div>
             <div class="name">
-                <h1>
-                    <a href="index.html" title="Home" rel="home">Norilsk Russia</a>
-                </h1>
+                <a href="index.html" title="Home" rel="home">Norilsk Russia</a>
             </div>
         </header>
 
@@ -62,16 +60,16 @@ title: "Norilsk Russia: Promoting Tourism To The World's Most Northerly City"
                 <li class="{% if navigation.page == 'norilsk-weather' %}active{% endif %}">
                     <a href="norilsk-weather.html" title="Norilsk Weather Is Ideal For a Family Vacation">Weather</a>
                 </li>
-                {# <li class="{% if navigation.page == 'norilsk-video' %}active{% endif %}">
+                <li class="{% if navigation.page == 'norilsk-video' %}active{% endif %}">
                     <a href="norilsk-video.html" title="Norilsk Music Video: &quot;Song of a Polar Summer&quot;">Video</a>
-                </li> #}
+                </li>
                 <li class="{% if navigation.page == 'norilsk-links' %}active{% endif %}">
                     <a href="/norilsk-links.html" title="Norilsk Links">Links</a>
                 </li>
             </ul>
         </nav>
 
-        <article class="content">
+        <article class="content clear-block">
             {{ content | safe }}
         </article>
 
