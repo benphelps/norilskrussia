@@ -31,59 +31,53 @@ title: "Norilsk Russia: Promoting Tourism To The World's Most Northerly City"
 </head>
 
 <body>
-    <div id="page">
-        <div id="header">
-            <div id="header-logo">
+    <div class="page">
+        <header class="header">
+            <div class="logo">
                 <a href="index.html">
                     <img src="img/norilsk-russia-flag.png" alt="Norilsk Russia" title="Norilsk Russia">
                 </a>
             </div>
-            <div id="name-and-slogan">
-                <h1 id="site-name">
-                    <a href="index.html" title="Home" rel="home">
-                        <span>Norilsk Russia</span>
-                    </a>
+            <div class="name">
+                <h1>
+                    <a href="index.html" title="Home" rel="home">Norilsk Russia</a>
                 </h1>
             </div>
-        </div>
+        </header>
 
-        <div id="container">
-            <div id="navigation">
-                <div id="primary" class="clear-block">
-                    <ul class="links">
-                        <li class="{% if navigation.page == 'index' %}active{% endif %}">
-                            <a href="index.html" title="Norilsk Home Page">Home</a>
-                        </li>
-                        <li class="{% if navigation.page == 'norilsk-people' %}active{% endif %}">
-                            <a href="norilsk-people.html" title="People of Norilsk">People</a>
-                        </li>
-                        <li class="{% if navigation.page == 'norilsk-resources' %}active{% endif %}">
-                            <a href="norilsk-resources.html" title="Norilsk Is The Most Resource Rich City On Earth">Resources</a>
-                        </li>
-                        <li class="{% if navigation.page == 'norilsk-nature' %}active{% endif %}">
-                            <a href="norilsk-nature.html" title="Norilsk Russia is an Ecological Paradise">Nature</a>
-                        </li>
-                        <li class="{% if navigation.page == 'norilsk-weather' %}active{% endif %}">
-                            <a href="norilsk-weather.html" title="Norilsk Weather Is Ideal For a Family Vacation">Weather</a>
-                        </li>
-                        {# <li class="{% if navigation.page == 'norilsk-video' %}active{% endif %}">
-                            <a href="norilsk-video.html" title="Norilsk Music Video: &quot;Song of a Polar Summer&quot;">Video</a>
-                        </li> #}
-                        <li class="{% if navigation.page == 'norilsk-links' %}active{% endif %}">
-                            <a href="/norilsk-links.html" title="Norilsk Links">Links</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+        <nav class="navigation clear-block">
+            <ul>
+                <li class="{% if navigation.page == 'index' %}active{% endif %}">
+                    <a href="index.html" title="Norilsk Home Page">Home</a>
+                </li>
+                <li class="{% if navigation.page == 'norilsk-people' %}active{% endif %}">
+                    <a href="norilsk-people.html" title="People of Norilsk">People</a>
+                </li>
+                <li class="{% if navigation.page == 'norilsk-resources' %}active{% endif %}">
+                    <a href="norilsk-resources.html" title="Norilsk Is The Most Resource Rich City On Earth">Resources</a>
+                </li>
+                <li class="{% if navigation.page == 'norilsk-nature' %}active{% endif %}">
+                    <a href="norilsk-nature.html" title="Norilsk Russia is an Ecological Paradise">Nature</a>
+                </li>
+                <li class="{% if navigation.page == 'norilsk-weather' %}active{% endif %}">
+                    <a href="norilsk-weather.html" title="Norilsk Weather Is Ideal For a Family Vacation">Weather</a>
+                </li>
+                {# <li class="{% if navigation.page == 'norilsk-video' %}active{% endif %}">
+                    <a href="norilsk-video.html" title="Norilsk Music Video: &quot;Song of a Polar Summer&quot;">Video</a>
+                </li> #}
+                <li class="{% if navigation.page == 'norilsk-links' %}active{% endif %}">
+                    <a href="/norilsk-links.html" title="Norilsk Links">Links</a>
+                </li>
+            </ul>
+        </nav>
 
-            <div id="content">
-                {{ content | safe }}
-            </div>
+        <article class="content">
+            {{ content | safe }}
+        </article>
 
-            <div id="footer">
-                Restored and maintained by <a href="https://phelps.io/">Бенджамін Фелпс</a>.
-            </div>
-        </div>
+        <footer class="footer">
+            Restored and maintained by <a href="https://phelps.io/">Бенджамін Фелпс</a>.
+        </footer>
     </div>
 </body>
 
